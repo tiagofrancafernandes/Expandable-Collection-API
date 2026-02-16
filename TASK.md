@@ -209,3 +209,7 @@ Do not rush into coding.
 
 Start by producing the architecture plan.
 Then wait for next execution cycle.
+
+#### Initial plan (reference file not prioritary)
+- File: temp/initial-plan.md
+It was used to create the plan above. It may be that there is something missing to be added to the task, so you can implement it as long as it is viable
