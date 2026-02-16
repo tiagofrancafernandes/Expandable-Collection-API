@@ -15,5 +15,8 @@ echo "CODE_CLOUD_ENVIRONMENT: ${CODE_CLOUD_ENVIRONMENT}"
 ### Or Specifc
 ## codex cloud exec --env $CODE_CLOUD_ENVIRONMENT "Implement collection filtering"
 
+DEFUALT_PROMPT='Continue'
+PROMPT="${1:-$DEFUALT_PROMPT}"
 
-codex cloud exec --env $CODE_CLOUD_ENVIRONMENT "Continue implementation"
+# codex cloud exec --env $CODE_CLOUD_ENVIRONMENT "Continue implementation"
+codex cloud exec --env $CODE_CLOUD_ENVIRONMENT "${PROMPT}"
