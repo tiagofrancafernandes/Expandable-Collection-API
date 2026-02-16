@@ -23,10 +23,15 @@
                                         "status": {
                                             "type": "string",
                                             "const": "ok"
+                                        },
+                                        "response_time": {
+                                            "type": "string",
+                                            "format": "date-time"
                                         }
                                     },
                                     "required": [
-                                        "status"
+                                        "status",
+                                        "response_time"
                                     ]
                                 }
                             }

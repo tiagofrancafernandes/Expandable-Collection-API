@@ -79,8 +79,21 @@
         "docs:generate": [
             "@php artisan scramble:export"
         ],
+        "ide-helper-write:full": [
+            "@php artisan ide-helper:models --write",
+            "@php artisan ide-helper:generate",
+            "@php artisan ide-helper:eloquent"
+        ],
+        "lint:test": [
+            "./vendor/bin/pint --config ./pint.json --test"
+        ],
         "lint:fix": [
             "./vendor/bin/pint --config ./pint.json --dirty"
+        ],
+        "git:pre-commit": [
+            "composer docs:generate",
+            "composer ide-helper-write:full",
+            "composer lint:fix"
         ]
     },
     "extra": {
