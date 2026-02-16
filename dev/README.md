@@ -26,9 +26,14 @@ This folder contains implementation-oriented guides for contributors working on 
   ```bash
   composer lint:fix
   ```
+
 - Generate/serve API docs:
   ```bash
   php artisan scramble:export
+  ```
+    or
+  ```bash
+  composer docs:generate
   ```
 
 ## Mandatory Rules

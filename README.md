@@ -36,9 +36,19 @@ Expandable Collection API is a Laravel 12 + PostgreSQL backend for multi-tenant 
   ```bash
   composer lint
   ```
+
 - Style autofix for dirty files:
   ```bash
   composer lint:fix
+  ```
+
+- Generate/serve API docs:
+  ```bash
+  php artisan scramble:export
+  ```
+    or
+  ```bash
+  composer docs:generate
   ```
 
 ## Architecture and Planning Docs
