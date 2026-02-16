@@ -13,6 +13,7 @@
         "dedoc/scramble": "^0.13.14",
         "laravel/framework": "^12.0",
         "laravel/tinker": "^2.10.1",
+        "myclabs/deep-copy": "^1.13",
         "spatie/laravel-permission": "^7.1"
     },
     "require-dev": {
