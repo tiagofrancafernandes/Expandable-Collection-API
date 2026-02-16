@@ -43,4 +43,7 @@ yarn-error.log
 *.zip
 _ide_helper*
 
+*.env
 .codex*.env
+!*example*.env
+!*.env*.example
