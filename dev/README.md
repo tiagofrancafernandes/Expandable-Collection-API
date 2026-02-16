@@ -35,3 +35,15 @@ This folder contains implementation-oriented guides for contributors working on 
 - Follow `UNIVERSAL-CODE-STYLE-RULES.md`.
 - Follow docs-driven sequence from `AGENTS.md`.
 - Update `docs/progress.md` and `docs/decisions.md` when behavior or architecture changes.
+# Developer Documentation
+
+## Quick Links
+- [Architecture Overview](architecture-overview.md)
+- [Implementation Workflow](workflow.md)
+
+## Project Status
+Phase A foundation is active and includes:
+- Laravel app scaffold and dependency baseline.
+- PostgreSQL-oriented environment defaults in `.env.example`.
+- `spatie/laravel-permission` installation and bootstrap seeding.
+- Tenant-aware `Project` and `Collection` model foundations.
