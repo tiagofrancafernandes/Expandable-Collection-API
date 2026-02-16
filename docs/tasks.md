@@ -1,11 +1,11 @@
 # Tasks
 
 ## Phase 1: Foundation
-- [ ] Initialize Laravel application skeleton.
-- [ ] Configure PostgreSQL connection and environment examples.
-- [ ] Install and configure `spatie/laravel-permission`.
-- [ ] Install and configure API documentation generator.
-- [ ] Configure Pint and baseline quality scripts.
+- [x] Initialize Laravel application skeleton.
+- [x] Configure PostgreSQL connection and environment examples.
+- [x] Install and configure `spatie/laravel-permission`.
+- [x] Install and configure API documentation generator.
+- [x] Configure Pint and baseline quality scripts.
 
 ## Phase 2: Multi-Tenancy Core
 - [ ] Create core migrations: users, projects, collections, collection_fields, records, media, api_tokens.

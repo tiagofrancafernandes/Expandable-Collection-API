@@ -75,3 +75,18 @@ Prefer `dedoc/scramble` as Laravel-native automated API docs package.
 ### Consequences
 - Faster API documentation upkeep.
 - Requires annotation discipline for best output quality.
+
+## D-006: Foundation stack finalized on Laravel 12 + Spatie Permission + Scramble
+- Date: 2026-02-16
+- Status: Accepted
+
+### Context
+Phase 1 requires a stable framework baseline, authorization package baseline, and automated API documentation tooling.
+
+### Decision
+Initialize the backend with Laravel 12, add `spatie/laravel-permission` for role/permission primitives, and add `dedoc/scramble` for automated API documentation generation.
+
+### Consequences
+- Provides a production-ready baseline aligned with architecture and task plan.
+- Reduces later integration risk by installing core dependencies early.
+- Enables incremental endpoint documentation as features are implemented.

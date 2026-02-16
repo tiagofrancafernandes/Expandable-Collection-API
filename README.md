@@ -1,23 +1,51 @@
 # Expandable Collection API
 
-Multi-tenant dynamic collection API built with Laravel and PostgreSQL.
+Expandable Collection API is a Laravel 12 + PostgreSQL backend for multi-tenant dynamic collections.
 
-## Status
-Architecture and delivery planning baseline is complete.
-Implementation phases are tracked in `docs/tasks.md`.
+## Current Status
+- ✅ Phase 1 foundation baseline completed.
+- ✅ Laravel application skeleton initialized.
+- ✅ PostgreSQL-oriented environment defaults added.
+- ✅ `spatie/laravel-permission` and `dedoc/scramble` installed and published.
 
-## Product Intent
-- User-owned projects.
-- Project-owned dynamic collections.
-- Flexible record schema with internal generated functions.
-- Strong tenant isolation and token-scoped collection permissions.
+## Quick Start
+1. Install dependencies:
+   ```bash
+   composer install
+   ```
+2. Create environment file:
+   ```bash
+   cp .env.example .env
+   ```
+3. Generate app key:
+   ```bash
+   php artisan key:generate
+   ```
+4. Configure PostgreSQL credentials in `.env`.
+5. Run migrations:
+   ```bash
+   php artisan migrate
+   ```
+6. Run tests:
+   ```bash
+   composer test
+   ```
 
-## Key Docs
+## Quality Commands
+- Style check:
+  ```bash
+  composer lint
+  ```
+- Style autofix for dirty files:
+  ```bash
+  composer lint:fix
+  ```
+
+## Architecture and Planning Docs
 - `docs/architecture.md`
 - `docs/tasks.md`
 - `docs/progress.md`
 - `docs/decisions.md`
-- `dev/README.md`
 
-## Style Standard
-All code must follow `UNIVERSAL-CODE-STYLE-RULES.md`.
+## Developer Documentation
+See `dev/README.md` for developer guides and workflow details.
