@@ -51,3 +51,16 @@ Status: ✅ Completed.
 
 ## Next Implementation Step
 - Start Phase 2 by creating core multi-tenant migrations and tenant context primitives.
+
+### Step 7: Phase 2 core migration baseline
+- Added migration for `collection_fields` with schema metadata, reference constraints, and ordering/index support.
+- Added migration for `records` with JSONB payload (`data`), searchable projection (`search_index`), and tenant-access indexes.
+- Added migration for `media` with tenant ownership, optional collection/record linkage, and metadata fields.
+- Added migration for `api_tokens` and `api_token_permissions` with per-collection CRUD/full-access permission flags.
+- Updated task tracking to mark the first Phase 2 migration task as complete.
+
+Status: ✅ Completed.
+
+## Next Implementation Step
+- Implement Phase 2 tenant context resolver service for request-scoped project isolation.
+

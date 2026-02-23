@@ -23,5 +23,6 @@ Core goals:
 6. Keep developer docs and guidance in sync with actual architecture.
 
 # Current Delivery Stage
-Phase 1 foundation completed.
-Next stage: implement Phase 2 multi-tenancy core primitives (migrations, tenant resolver, scopes, policies).
+Phase 2 has started.
+Completed: core multi-tenant migrations baseline (`collection_fields`, `records`, `media`, `api_tokens`, `api_token_permissions`).
+Next stage: implement tenant context resolver service, then global scopes and policy layer.

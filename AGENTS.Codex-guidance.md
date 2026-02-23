@@ -32,5 +32,6 @@ Operational guardrails for Codex while implementing this repository.
 
 
 ## Current Stage
-- Phase 1 foundation is complete.
-- Next execution cycle should begin Phase 2 multi-tenancy core implementation in sequence.
+- Phase 2 is in progress.
+- Core migration baseline is completed.
+- Next execution cycle should implement the tenant context resolver service, followed by global scopes and policy enforcement.
