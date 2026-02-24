@@ -29,6 +29,11 @@
 - spatie/laravel-permission for roles/permissions.
 - Super-admin role bypasses tenant scope and policy restrictions where appropriate.
 
+### Request tenant context
+- Resolve `TenantContext` once per API request in middleware.
+- Context includes authenticated `user_id`, `is_super_admin`, and optional `project_id`.
+- Optional `X-Project-Public-Id` header selects project context for scoped operations.
+
 ### Token authorization
 - API tokens resolve to project context.
 - Middleware validates token and checks operation-level permission on target collection.
