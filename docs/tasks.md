@@ -10,7 +10,7 @@
 
 ## Phase 2: Multi-Tenancy Core
 - [x] Create core migrations: users, projects, collections, collection_fields, records, media, api_tokens.
-- [x] Implement tenant context resolver service.
+- [ ] Implement tenant context resolver service.
 - [ ] Implement project-based global scopes.
 - [ ] Add super-admin bypass strategy in data access layer.
 - [ ] Implement policies for management routes.

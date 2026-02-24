@@ -64,16 +64,3 @@ Status: ✅ Completed.
 ## Next Implementation Step
 - Implement Phase 2 tenant context resolver service for request-scoped project isolation.
 
-### Step 8: Phase 2 tenant context resolver service
-- Added `TenantContext` value object for request-scoped user/project tenant state transport.
-- Implemented `TenantContextResolver` to resolve authenticated tenant context and optional project context from `X-Project-Public-Id`.
-- Added API middleware (`ResolveTenantContext`) to resolve and register tenant context per request lifecycle.
-- Registered tenant context defaults and resolver service in the application service provider.
-- Added unit tests for unauthenticated and authenticated-no-project-header resolver behavior.
-- Updated task tracking to mark the tenant context resolver task as complete.
-
-Status: ✅ Completed.
-
-## Next Implementation Step
-- Implement Phase 2 project-based global scope expansion using tenant context service.
-
