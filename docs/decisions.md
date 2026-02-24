@@ -90,3 +90,34 @@ Initialize the backend with Laravel 12, add `spatie/laravel-permission` for role
 - Provides a production-ready baseline aligned with architecture and task plan.
 - Reduces later integration risk by installing core dependencies early.
 - Enables incremental endpoint documentation as features are implemented.
+
+## D-007: Keep token permission mapping in dedicated `api_token_permissions` table
+- Date: 2026-02-20
+- Status: Accepted
+
+### Context
+Project tokens require per-collection CRUD granularity and should remain queryable and auditable without parsing embedded JSON blobs.
+
+### Decision
+Model project tokens in `api_tokens` and store collection-level permission flags in a dedicated `api_token_permissions` table with a unique token+collection constraint.
+
+### Consequences
+- Supports explicit and indexable permission checks in middleware/policies.
+- Simplifies future permission evolution (`full` and CRUD flags) without changing token identity data.
+- Adds one extra join for permission evaluation, offset by relational clarity and safer authorization logic.
+
+## D-008: Request-scoped tenant context resolved through middleware
+- Date: 2026-02-20
+- Status: Accepted
+
+### Context
+Tenant scoping must support both authenticated user flows and upcoming token-based project access while avoiding repeated context derivation logic in each service/policy/scope.
+
+### Decision
+Introduce a dedicated `TenantContextResolver` and `TenantContext` value object, and resolve it once per API request via middleware. Accept optional `X-Project-Public-Id` to select project context.
+
+### Consequences
+- Centralizes tenant context derivation logic for policies, scopes, and middleware layering.
+- Simplifies migration path to token-authenticated project context in Phase 4.
+- Enables explicit handling of super-admin and project-selection behavior without duplicating query logic.
+

@@ -9,8 +9,8 @@
 - [x] Configure Pint and baseline quality scripts.
 
 ## Phase 2: Multi-Tenancy Core
-- [ ] Create core migrations: users, projects, collections, collection_fields, records, media, api_tokens.
-- [ ] Implement tenant context resolver service.
+- [x] Create core migrations: users, projects, collections, collection_fields, records, media, api_tokens.
+- [x] Implement tenant context resolver service.
 - [ ] Implement project-based global scopes.
 - [ ] Add super-admin bypass strategy in data access layer.
 - [ ] Implement policies for management routes.
@@ -49,10 +49,10 @@
 - [ ] Ensure generated API docs are published and accessible.
 
 ## Current Iteration Focus
-- [ ] Create architecture and phased task plan.
-- [ ] Document progress baseline.
-- [ ] Document architectural decisions and rationale.
-- [ ] Update agent-oriented project guidance docs.
+- [x] Create architecture and phased task plan.
+- [x] Document progress baseline.
+- [x] Document architectural decisions and rationale.
+- [x] Update agent-oriented project guidance docs.
 
 ## Phase A - Foundation (Completed)
 1.  Scaffold Laravel API project and environment baseline.
